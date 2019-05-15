@@ -1,0 +1,91 @@
+*{
+	padding: 0;
+	margin: 0
+}
+body{
+
+	background: #c31432;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	height: 100%;
+}
+#form{
+	margin: auto;
+	background-color: #fff;
+	width: 500px;
+	position: relative;
+	top: 10px;
+	padding: 100px;
+}
+
+#center{
+	width: 500px;
+	margin: auto;
+}
+
+input{
+	height: 45px;
+	width: 100%;
+	color: #000;
+	border: 0;
+	border-bottom: 1px solid #c31432;
+	position: relative;
+	left: 0px;
+	font-weight: bold;
+	border-color: #000;
+}
+
+#forgot{
+	position: relative;
+	top: 50px;
+	left: 50px;
+}
+
+a{
+	text-decoration: none;
+	font-size: 20px;
+	color: #c31432;
+}
+
+#btn{
+	border: 0;
+	border-radius: 10px;
+	color: #fff;
+	position: relative;
+	top: 25px;
+	background-color: #c31432;
+}
+
+#title{
+	color: #c31432;
+	font-size: 6.5vh;
+	font-family: impact;
+	position: relative;
+	bottom: 20px;
+	position: relative;
+	bottom: 50px;
+	letter-spacing: 2px;
+}
+
+
+@media screen and (min-width: 1440px){
+	#title{
+	color: #c31432;
+	font-size: 5vh;
+	font-family: impact;
+	position: relative;
+	bottom: 20px;
+	position: relative;
+	bottom: 50px;
+	letter-spacing: 2px;
+}
+
+#form{
+	margin: auto;
+	background-color: #fff;
+	width: 500px;
+	position: relative;
+	top: 80px;
+	padding: 100px;
+}
+}

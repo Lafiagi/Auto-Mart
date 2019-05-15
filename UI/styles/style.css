@@ -9,12 +9,12 @@ body{
 	background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	height: 100%;
 }
-#form{
+#formlogin{
 	margin: auto;
 	background-color: #fff;
 	width: 500px;
 	position: relative;
-	top: 10px;
+	top: 100px;
 	padding: 100px;
 }
 
@@ -38,7 +38,7 @@ input{
 #forgot{
 	position: relative;
 	top: 50px;
-	left: 50px;
+	left: 200px;
 }
 
 a{
@@ -59,7 +59,6 @@ a{
 #title{
 	color: #c31432;
 	font-size: 6.5vh;
-	font-family: impact;
 	position: relative;
 	bottom: 20px;
 	position: relative;
@@ -72,7 +71,6 @@ a{
 	#title{
 	color: #c31432;
 	font-size: 5vh;
-	font-family: impact;
 	position: relative;
 	bottom: 20px;
 	position: relative;
@@ -88,4 +86,62 @@ a{
 	top: 80px;
 	padding: 100px;
 }
+}
+
+
+
+
+@media screen and (min-width: 768px){
+	#title{
+	color: #c31432;
+	font-size: 4.5vh;
+	position: relative;
+	position: relative;
+	bottom: 30px;
+	letter-spacing: 2px;
+	text-align: center;
+}
+}
+
+
+@media screen and (max-width: 360px){
+	#formlogin{
+	margin: auto;
+	background-color: #fff;
+	width: 44%;
+	position: relative;
+	top: 0px;
+	padding: 100px;
+}
+form{
+	width: 100%;
+}
+#title{
+	color: #c31432;
+	font-size: 5vh;
+	position: relative;
+	bottom: 20px;
+	width: 255px;
+
+}
+
+input{
+	height: 45px;
+	width: 250px;
+	color: #000;
+	border: 0;
+	border-bottom: 1px solid #c31432;
+	font-weight: bold;
+	border-color: #000;
+}
+#forgot{
+	width: 250px;
+}
+#center{
+	position: relative;
+	right: 50px;
+	width: 100%;
+	margin: 0;
+}
+
 }

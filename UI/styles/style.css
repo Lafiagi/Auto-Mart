@@ -34,7 +34,9 @@ input{
 	font-weight: bold;
 	border-color: #000;
 }
-
+input:invalid{
+	border-bottom: 5px solid red;
+}
 #forgot{
 	position: relative;
 	top: 50px;
@@ -105,12 +107,11 @@ a{
 
 
 @media screen and (max-width: 360px){
-	#formlogin{
-	margin: auto;
+	#formreset{
 	background-color: #fff;
-	width: 44%;
+	width: 35%;
 	position: relative;
-	top: 0px;
+	top: 50px;
 	padding: 100px;
 }
 form{
@@ -118,10 +119,11 @@ form{
 }
 #title{
 	color: #c31432;
-	font-size: 5vh;
+	font-size: 4vh;
 	position: relative;
 	bottom: 20px;
-	width: 255px;
+	width: 300px;
+	line-height: 50px;
 
 }
 
@@ -136,7 +138,10 @@ input{
 }
 #forgot{
 	width: 250px;
+	position: relative;
+	left:  00px;
 }
+
 #center{
 	position: relative;
 	right: 50px;

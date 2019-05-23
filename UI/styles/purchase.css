@@ -123,6 +123,26 @@ a{
 	transition: 1s
 }
 
+#updatebtn{
+	border: 0;
+	min-width: 200px;
+	border-radius: 10px;
+	color: #fff;
+	background-color: #c31432;
+	cursor: pointer;
+	position: relative;
+	left: 5px;
+}
+
+#updatebtn:hover{
+	border: 1px solid #c31432;
+	border-radius: 10px;
+	color: #c31432;
+	background-color: rgba(255,255,255,.9);
+	transition: 1s
+}
+
+
 input{
 	height: 45px;
 	width: 100%;
@@ -136,6 +156,10 @@ input{
 }
 input:invalid{
 	border-bottom: 5px solid red;
+}
+
+input#updateinp{
+min-width: 250px;
 }
 #filter{
 	position: relative;
@@ -216,4 +240,12 @@ font-size: 20px;
 }
 .neg{
 	margin-top: 10px;
+}
+
+.update{
+	display: flex;
+	position: relative;
+	justify-content: space-around;
+	bottom: 50px;
+	left: 370px;
 }

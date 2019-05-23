@@ -2,17 +2,13 @@
 	padding: 0;
 	margin: 0
 }
-#menu{
-	display: flex;
-	width: 100%;
-	margin: auto;
-	background-color: rgba(100,100,100,.4);
-}
-#logo a{
-	padding: 10px;
-	font-size: 7vh;
-	color: #fff;
-	font-family: "Lobster";
+
+body{
+
+	background: #c31432;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+	background:linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	height: 100%;
 }
 #red{
 	color: #c31432;
@@ -20,10 +16,6 @@
 #items{
 	display: flex;
 	align-content: 
-}
-#file{
-	border: 1px solid #fff;
-	cursor: pointer;
 }
 li{
 	list-style: none;
@@ -37,64 +29,98 @@ color: #fff;
 li a:hover{
 border-bottom: 2px solid #fff;
 }
-body{
 
-	background: #c31432;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
-	background:linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	height: 100%;
+a{
+	text-decoration: none;
+	font-size: 20px;
+	color: #c31432;
+}
+#menu{
+	display: flex;
+	width: 100%;
+	margin: auto;
+	position: fixed;
+	background-color: rgba(100,100,100,.4);
+	z-index: 1;
+}
+#logo a{
+	padding: 10px;
+	font-size: 7vh;
+	color: #fff;
+	font-family: "Lobster";
+}
+
+#ad{
+	padding: 10px;
+	font-size: 2em;
+	color: #fff;
+	font-family: "Almendra";
+	letter-spacing: 3px;
+	position: relative;
+	left: 90px;
+	top: 10px
+
+}
+
+.card{
+	width: 800px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding:30px;
+	box-shadow: 2px 2px 10px red;
+	background-color: white;
+	color: black;
+	max-height: 200px;
+	margin-top: 20px;
+}
+
+#cars{
+	width: 800px;
+	margin: auto;
+	color: black;
+}
+
+#section1 img{
+	width: 300px;
+	height: 200px;
+}
+#section3{
+	font-size: 20px;
 }
 
 #container{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
-}
-#ftitle{
-	min-width: 90%;
-	background-color: #c31432;
-	text-align: center;
-	padding: 10px;
-	color: #fff;
-}
-#form{
-	margin: auto;
-	background-color: #333;
-	min-width:50%;
 	position: relative;
-	top: 50px;
-	padding: 100px;
-	box-shadow: 110px;
+	top: 100px;
+}
+#logo h3{
+	text-align: center;
+	width: 700px;
+	position: relative;
+	top: 90px;
+
 }
 
-#filter{
-	min-width: 200px;
-	background-color: rgba(250,250,250,.8);
+#btn{
+	border: 0;
+	min-width: 500px;
+	border-radius: 10px;
+	color: #fff;
 	position: relative;
-	top: 50px;
+	bottom: 50px;
+	left: 320px;
+	background-color: #c31432;
+	cursor: pointer;
 }
+
 #btn:hover{
 	border: 1px solid #c31432;
 	border-radius: 10px;
 	color: #c31432;
 	background-color: rgba(255,255,255,.9);
-	cursor: pointer;
 	transition: 1s
-}
-
-#btn{
-	border: 0;
-	border-radius: 10px;
-	color: #fff;
-	position: relative;
-	top: 50px;
-	background-color: #c31432;
-	cursor: pointer;
-}
-
-#center{
-	width: 100%;
-	margin: auto;
 }
 
 input{
@@ -111,129 +137,83 @@ input{
 input:invalid{
 	border-bottom: 5px solid red;
 }
-#forgot{
+#filter{
 	position: relative;
-	top: 50px;
-	left: 200px;
+	top: 20px;
+	max-width: 250px;
+	right: 20px;
+	padding: 30px;
+	background-color: white;
+	height: 420px;
 }
-
-a{
-	text-decoration: none;
-	font-size: 20px;
-	color: #c31432;
+#filter input{
+	height: 40px;
+	width: 20px;
 }
-
-#adform{
-	background-color: black;
-	width: 50%;
-	padding: 10px;
-}
-.select{
-	width: 90%;
-	min-width: 100%;
-	padding: 10px;
-	border-radius: 1px;
-}
-#advertform{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-label{
-	min-width: 300px;
-	color:#fff;
-}
-
-h1#title{
-	color: #fff;
-	font-size: 1.5em;
-	position: relative;
-	bottom: 20px;
-	position: relative;
-	bottom: 50px;
-	letter-spacing: 2px;
-	font-family: 'Stint Ultra Expanded'
-}
-
-
-@media screen and (min-width: 1440px){
-	#title{
-	color: #c31432;
-	font-size: 5vh;
-	position: relative;
-	bottom: 20px;
-	position: relative;
-	bottom: 50px;
-	letter-spacing: 2px;
-}
-
-#form{
+#ftitle{
 	margin: auto;
-	background-color: #fff;
-	width: 500px;
-	position: relative;
-	top: 80px;
-	padding: 100px;
-}
-}
-
-
-
-
-@media screen and (min-width: 768px){
-	#title{
-	color: #c31432;
-	font-size: 4.5vh;
-	position: relative;
+	color: #fff;
+	text-align: center;
+	font-size: 30px;
+	font-family: "Alegreya Sans";
+	letter-spacing: 2px;
+	background-color: #c31432;
+	padding: 10px;
+	width: 290px;
 	position: relative;
 	bottom: 30px;
-	letter-spacing: 2px;
-	text-align: center;
+	right: 30px;
 }
+
+select{
+	padding: 5px;
+	width: 100%;
+	padding: 10px;
+}
+
+#price select{
+	width: 99%;
 }
 
 
-@media screen and (max-width: 360px){
-	#form{
-	background-color: #fff;
-	width: 35%;
+#price{
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	top: 90px;
+}
+
+
+#condition{
+	position: relative;
+	top: 20px;
+}
+
+
+#ttype{
 	position: relative;
 	top: 50px;
-	padding: 100px;
 }
-form{
-	width: 100%;
-}
-#title{
-	color: #c31432;
-	font-size: 4vh;
+
+#btype{
 	position: relative;
-	bottom: 20px;
-	width: 300px;
-	line-height: 50px;
-
+	top: 70px;
+}
+#first{
+font-size: 20px;
 }
 
-input{
-	height: 45px;
-	width: 250px;
-	color: #000;
-	border: 0;
-	border-bottom: 1px solid #c31432;
-	font-weight: bold;
-	border-color: #000;
-}
-#forgot{
-	width: 250px;
-	position: relative;
-	left:  00px;
+#second{
+position: relative;
+top: 10px;
+font-size: 20px;
 }
 
-#center{
-	position: relative;
-	right: 50px;
-	width: 100%;
-	margin: 0;
+#third{
+position: relative;
+top: 20px;
+font-size: 20px;
 }
-
+.neg{
+	margin-top: 10px;
 }

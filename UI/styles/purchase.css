@@ -50,12 +50,12 @@ a{
 	font-family: "Lobster";
 }
 
-#ad{
+#admin{
 	padding: 10px;
-	font-size: 2em;
+	font-size: 1.5em;
 	color: #fff;
 	font-family: "Almendra";
-	letter-spacing: 3px;
+	letter-spacing: 1px;
 	position: relative;
 	left: 90px;
 	top: 10px
@@ -142,6 +142,24 @@ a{
 	transition: 1s
 }
 
+#deletebtn{
+	border: 0;
+	min-width: 420px;
+	border-radius: 10px;
+	color: #fff;
+	background-color: #c31432;
+	cursor: pointer;
+	position: relative;
+	left: 5px;
+}
+
+#updatebtn:hover{
+	border: 1px solid #c31432;
+	border-radius: 10px;
+	color: #c31432;
+	background-color: rgba(255,255,255,.9);
+	transition: 1s
+}
 
 input{
 	height: 45px;

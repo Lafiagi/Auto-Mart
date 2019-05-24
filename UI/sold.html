@@ -3,7 +3,7 @@
 <head>
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	 <meta charset="utf-8">
-	<title>Update Your Bargain</title>
+	<title>Sold Cars</title>
 	<link rel="stylesheet" type="text/css" href="styles/purchase.css">
 	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Stint Ultra Expanded' rel='stylesheet'>
@@ -74,22 +74,15 @@
 					</div>
 
 					<div class="neg">
-						<span>Your bargain:</span>
-						<span>1,200,000</span>
-					</div>
-
-					<div class="neg">
-						<span>Negotiable:</span>
-						<span>Yes!</span>
+						<span>Sold:</span>
+						<span>Yes<input type="radio" name="sold"  onclick="handleClick(true)"> </span>
+						<span>No<input type="radio" name="sold" onclick="handleClick(false)"> </span>
 					</div>
 				</div>
 
-				<div class="update">
+				<div class="updatesold">
 					<div>
-						<input type="text" name="" placeholder="Update Bargain" id="updateinp">
-					</div>
-					<div>
-						<input type="submit" name="" value = "Update Price" id="updatebtn">
+						<span>THIS ITEM HAS BEEEN SOLD, THANK YOU!!</span>
 					</div>
 				</div>
 			</div>
@@ -126,28 +119,21 @@
 					</div>
 
 					<div class="neg">
-						<span>Your bargain:</span>
-						<span>1,200,000</span>
-					</div>
-
-					<div class="neg">
-						<span>Negotiable:</span>
-						<span>Yes!</span>
+						<span>Sold:</span>
+						<span>Yes<input type="radio" name="sold"  onclick="handleClick(true)"> </span>
+						<span>No<input type="radio" name="sold" onclick="handleClick(false)"> </span>
 					</div>
 				</div>
 
-				<div class="update">
+				<div class="updatesold">
 					<div>
-						<input type="text" name="" placeholder="Update Bargain" id="updateinp">
-					</div>
-					<div>
-						<input type="submit" name="" value = "Update Price" id="updatebtn">
+						<span>THIS ITEM HAS BEEEN SOLD, THANK YOU!!</span>
 					</div>
 				</div>
 			</div>
 
 
-				<div class="card">
+			<div class="card">
 				<div id="section1">
 					<img src="images/c.jpg">
 				</div>
@@ -177,26 +163,19 @@
 					</div>
 
 					<div class="neg">
-						<span>Your bargain:</span>
-						<span>1,200,000</span>
-					</div>
-
-					<div class="neg">
-						<span>Negotiable:</span>
-						<span>Yes!</span>
+						<span>Sold:</span>
+						<span>Yes<input type="radio" name="sold"  onclick="handleClick(true, this)"> </span>
+						<span>No<input type="radio" name="sold" onclick="handleClick(false, this)"> </span>
 					</div>
 				</div>
 
-				<div class="update">
-					<div>
-						<input type="text" name="" placeholder="Update Bargain" id="updateinp">
-					</div>
-					<div>
-						<input type="submit" name="" value = "Update Price" id="updatebtn">
-					</div>
+				<div class="updatesold">
+					
 				</div>
 			</div>
-
+<!--
+	if from the server side the returned value for sold is true, the message will be displayed
+-->
 
 			
 

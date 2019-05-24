@@ -148,11 +148,11 @@ input{
 	width: 100%;
 	color: #000;
 	border: 0;
-	border-bottom: 1px solid #c31432;
+	border-bottom: 2px solid #c31432;
 	position: relative;
 	left: 0px;
 	font-weight: bold;
-	border-color: #000;
+	border-color: #c31432;
 }
 input:invalid{
 	border-bottom: 5px solid red;
